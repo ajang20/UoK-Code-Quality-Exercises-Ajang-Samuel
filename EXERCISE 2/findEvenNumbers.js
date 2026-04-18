@@ -1,9 +1,9 @@
-function findEvenNumbers(numbers) {
-  var evenNumbers = [];
-  for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      evenNumbers.push(numbers[i]);
-    }
-  }
-  return evenNumbers;
+function findEvenNumbers(array) {
+if(!array) return 'Parameter must be array of numbers'
+  return array.filter(n => n%2 ===0 )
 }
+
+ //TEST CASES
+console.log(findEvenNumbers([1000,11,23,53,21,22])); 
+console.log(findEvenNumbers(null))
+

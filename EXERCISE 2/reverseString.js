@@ -1,7 +1,11 @@
 function reverseString(str) {
-  var reversed = "";
-  for (var i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
-  }
-  return reversed;
+  if(typeof str !== 'string') return 'Parameter must be a string'
+  return str.split('').reverse().join('')
 }
+
+
+
+ //TEST CASES
+console.log(reverseString('ajang')); 
+console.log(reverseString(null))
+

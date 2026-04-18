@@ -1,11 +1,10 @@
-function maxNumber(a, b, c) {
-  if (a > b && a > c) {
-    return a;
-  } else {
-    if (b > a && b > c) {
-      return b;
-    } else {
-      return c;
-    }
-  }
+function maxNumber(...arr) {
+  if(!arr) 'Enter numbers'
+  return Math.max(...arr)
 }
+
+
+ //TEST CASES
+console.log(maxNumber(1,3,4,5)); 
+console.log(maxNumber(null))
+

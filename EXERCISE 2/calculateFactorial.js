@@ -1,11 +1,10 @@
 function calculateFactorial(n) {
-  if (n === 0 || n === 1) {
-    return 1;
-  } else {
-    var factorial = 1;
-    for (var i = 2; i <= n; i++) {
-      factorial *= i;
-    }
-    return factorial;
-  }
+  if(typeof n !== 'number') return 'Type of parameter must be number'
+  if (n === 0 || n === 1)  return 1;
+
+   return n * calculateFactorial(n-1)
 }
+
+ console.log(calculateFactorial(4))
+ console.log(calculateFactorial(1))
+ console.log(calculateFactorial(null))

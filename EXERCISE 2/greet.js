@@ -1,7 +1,8 @@
 function greet(name) {
-  if (name) {
-    return "Hello, " + name + "!";
-  } else {
-    return "Hello!";
-  }
+  return name ? `Hello ${name}`:'Hello';
 }
+
+ //TEST CASES
+console.log(greet('Samuel')); 
+console.log(greet(null))
+
