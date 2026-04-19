@@ -6,6 +6,7 @@ function levelOfNesting (arr){
     return 1 + Math.max(...arr.map( ele => levelOfNesting(ele)))
 }
 
+
 //returns an object with the level of nesting and the flattened array
 const flatten =  (array) => ({level:levelOfNesting(array),flattenedArray:array.flat(Infinity)})
 
