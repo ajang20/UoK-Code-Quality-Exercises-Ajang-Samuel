@@ -1,6 +1,6 @@
 
 function romanNumeralsEncoder (romanNum){
-    if(typeof romanNum !=='string') return 'Parameter must be roman numeral string'
+    if(typeof romanNum !=='string' || !romanNum.trim()) return 'Parameter must be roman numeral string'
     
      const romans = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
      const numbers = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
